@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" class="is-load-before is-splash-before">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Last-Modified" content="Wed, 20 Oct 2021 01:38:30">
+<title>Dark Matter</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../d17292ff19wl6v.cloudfront.net/v2/assets/img/icon/icon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../d17292ff19wl6v.cloudfront.net/v2/assets/img/icon/icon-16x16.png">
+<link rel="apple-touch-startup-image" href="../../d17292ff19wl6v.cloudfront.net/v2/assets/img/icon/icon-512x512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../d17292ff19wl6v.cloudfront.net/v2/assets/img/icon/icon-192x192.png">
+<link rel="apple-touch-icon" sizes="192x192" href="../../d17292ff19wl6v.cloudfront.net/v2/assets/img/icon/icon-192x192.png">
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="../../d17292ff19wl6v.cloudfront.net/v2/assets/img/icon/icon-192x192.png">
+<link rel="apple-touch-icon" sizes="512x512" href="../../d17292ff19wl6v.cloudfront.net/v2/assets/img/icon/icon-512x512.png">
+<link rel="preconnect" href="https://d17292ff19wl6v.cloudfront.net/" crossorigin>
+<link rel="preload" href="https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/icon/i.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/gallery/Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/lausanne/150.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/everett/Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/everett/Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="https://theshift.tokyo/wp-content/themes/the-shift/assets/js/manifest.json">
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+<style type="text/css">
+@font-face {
+  font-family: "i";
+  src: url("https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/icon/i.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "YakuHanJP";
+  src: url("https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.woff2")
+    format("woff2");
+  unicode-range: U+3001-3002, U+3008-3011, U+3014-3015, U+30fb, U+ff01,
+    U+ff08-ff09, U+ff1a-ff1b, U+ff1f, U+ff3b, U+ff3d, U+ff5b, U+ff5d;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "gallery";
+  src: url("https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/gallery/Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "lausanne";
+  src: url("https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/lausanne/150.woff2")
+    format("woff2");
+  font-weight: 150;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "everett";
+  src: url("https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/everett/Light.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "everett";
+  src: url("https://theshift.tokyo/wp-content/themes/the-shift/assets/fonts/everett/Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --gw: 4.16666667vw;
+  --col-font-black: rgba(20, 20, 20, 1);
+  --col-black: rgba(20, 20, 20, 1);
+  --col-white: rgba(240, 240, 240, 1);
+  --col-l-gray: rgba(230, 230, 230, 1);
+  --col-d-gray: rgba(50, 50, 50, 1);
+  --col-orange: rgba(254, 66, 73, 1);
+}
+[data-theme="light"]:root {
+  --col-font-black: rgba(245, 245, 245, 1);
+  --col-white: rgba(5, 5, 5, 1);
+  --col-black: rgba(245, 245, 245, 1);
+  --col-l-gray: rgba(230, 230, 230, 1);
+  --col-d-gray: rgba(50, 50, 50, 1);
+}
+@media (min-width: 1024px) {
+  .is-load-before .site-window {
+    opacity: 0;
+  }
+  .fadein {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+</style>
+
+</head>
+<body x-init="init()">
+<header class="site-header"><a href="index.html" data-to="home" class="site-name flip js-put-navi-a" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="a"><h1 class="fadein"><div class="o"><div class="t">Dark Matter</div></div></h1></a><nav class="site-navi js-css" @mouseenter="styleMenu.onEnter()" @mouseleave="styleMenu.onLeave()"><div class="site-navi-origin fadein in">
+<div class="site-navi-head js-css f-s" @click.prevent="styleMenu.onToggle()"><a href="#"><div class="ui-btn-link"><div class="o"><div class="t">MENU</div></div></div></a></div>
+<div class="site-navi-body js-css">
+<ul class="site-navi-ul flip">
+<li><a data-to="home" href="index.html" class="js-put-navi-a"><div class="in">
+<div class="u js-css"><div></div></div>
+<div class="o"><div class="t js-css"><div class="w">Home</div></div></div>
+</div></a></li>
+<li><a data-to="archive-project" href="project/index.html" class="js-put-navi-a"><div class="in">
+<div class="u js-css"><div></div></div>
+<div class="o"><div class="t js-css"><div class="w">Project</div></div></div>
+</div></a></li>
+<li><a data-to="archive-research" href="research/index.html" class="js-put-navi-a"><div class="in">
+<div class="u js-css"><div></div></div>
+<div class="o"><div class="t js-css"><div class="w">Research</div></div></div>
+</div></a></li>
+<li><a data-to="about" href="about/index.html" class="js-put-navi-a"><div class="in">
+<div class="u js-css"><div></div></div>
+<div class="o"><div class="t js-css"><div class="w">About</div></div></div>
+</div></a></li>
+</ul>
+<ul class="site-navi-lang js-css flip">
+<li class="ui-lang-a" @click.prevent="__LANG__.onToggle" data-to="en"><a href="index.html" class="ui-btn-link ui-btn-link-re js-put-lang-en"><div class="o"><div class="t">EN</div></div></a></li>
+<li class="ui-lang-a" @click.prevent="__LANG__.onToggle" data-to="ja"><a href="#" class="ui-btn-link ui-btn-link-re js-put-lang-ja"><div class="o"><div class="t">JA</div></div></a></li>
+</ul>
+</div>
+<div class="site-navi-bg js-css"><div></div></div>
+</div></nav></header><script>const init = () => {};</script><main class="site-window" id="top"><div class="page-content" data-xhr="wrapper"><div class="page-origin" data-en="/en/" data-ja="/" data-current-lang="en" data-page-theme="light" data-scroll-type="page" data-xhr="container" data-page-type="home" data-xhr-namespace="home">
+<div class="section page-header js-h" data-n="1" data-scroll-section>
+<div class="site-lang ui-lang-a js-inview" data-to="ja" @click.prevent="__LANG__.onToggle" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="a"><a href="https://theshift.tokyo/"><div class="ui-btn-link fadein"><div class="o"><div class="t">JA</div></div></div></a></div>
+<div class="page-title-pivot"><div class="in">
+<h1 class="page-title page-home-title flip-c js-delay-n js-inview"><div class="page-title-body js-split-l" data-type="char">
+<div class="l l1 odd">Company</div>
+<div> </div>
+<div class="l l2 even">Name</div>
+<div> </div>
+<div class="l l3 odd">Something</div>
+</div></h1>
+<div class="lead-box js-clip"><div class="lead-body"><div class="o"><div class="t indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque excepturi quia impedit assumenda omnis, modi quaerat deleniti soluta inventore sit iure distinctio commodi fugiat non quasi aperiam nemo maiores. </div></div></div></div>
+</div></div>
+<div class="js-delay-n js-clip">
+<div class="parts parts-b1 f-xxs hide-m"><div class="o"><div class="t"><div class="clock">
+<div class="clock-th">IN</div>
+<div class="clock-tb js-date">
+<div class="h">00</div>
+<div class="k">:</div>
+<div class="m">00</div>
+<div class="k">:</div>
+<div class="s">00</div>
+</div>
+</div></div></div></div>
+<div class="spr" data-n="0" data-mob="4.5"></div>
+<div class="pickup pickup-slide-wrap fadein f-xxs js-inview">
+<div class="pickup-head flip"><div class="o"><div class="t">PROJECTS</div></div></div>
+<div class="pickup-body"><div class="in">
+<div class="pickup-ul"><div class="pickup-ul-origin in">
+<a href="project/onerace/index.html" class="pickup-a pickup-slide" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="a"><div class="pickup-thumb"><div class="pickup-thumb-body">
+<div class="bg-img bg-video js-bg-video-inview"><video src="../videos/pexels-tima-miroshnichenko-6611945.mp4" muted playsinline loop preload="none"></video></div>
+<div class="alt">Onerace</div>
+</div></div>
+<div class="alt">Onerace</div></a><a href="project/jal-sky-museum/index.html" class="pickup-a pickup-slide" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="a"><div class="pickup-thumb"><div class="pickup-thumb-body">
+<div class="bg-img bg-video js-bg-video-inview"><video src="../videos/pexels-ivan-samkov-7392562.mp4" muted playsinline loop preload="none"></video></div>
+<div class="alt">JAL SKY MUSEUM</div>
+</div></div>
+<div class="alt">JAL SKY MUSEUM</div></a><a href="project/ppp-ci-renewal/index.html" class="pickup-a pickup-slide" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="a"><div class="pickup-thumb"><div class="pickup-thumb-body">
+<div class="bg-img bg-video js-bg-video-inview"><video src="../videos/pexels-maksim-goncharenok-5642525.mp4" muted playsinline loop preload="none"></video></div>
+<div class="alt">PPP CI renewal</div>
+</div></div>
+<div class="alt">PPP CI renewal</div></a><a href="project/kolor-paris-collection/index.html" class="pickup-a pickup-slide" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="a"><div class="pickup-thumb"><div class="pickup-thumb-body">
+<div class="bg-img bg-video js-bg-video-inview"><video src="../videos/pexels-cottonbro-7170787.mp4" muted playsinline loop preload="none"></video></div>
+<div class="alt">kolor PARISCollection</div>
+</div></div>
+<div class="alt">kolor PARISCollection</div></a><a href="project/co-ca-cola-coke-vision/index.html" class="pickup-a pickup-slide" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="a"><div class="pickup-thumb"><div class="pickup-thumb-body">
+<div class="bg-img bg-video js-bg-video-inview"><video src="../videos/pexels-rostislav-uzunov-5680034.mp4" muted playsinline loop preload="none"></video></div>
+<div class="alt">Co-ca cola coke vision</div>
+</div></div>
+<div class="alt">Co-ca cola coke vision</div></a>
+</div></div>
+<div class="pickup-control" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="circle"><div class="in">
+<a href="#" class="ui-btn-arrow" @click.prevent="pickupSlider.onSlideToNext()"> <div class="o"> <div class="i i-arrow-right"> <div class="alt">slide</div> </div> <div class="b"></div> </div> </a><svg class="progress" viewbox="0 0 62 62"><path d="M31,1A30,30,0,1,1,1,31,30,30,0,0,1,31,1"></path></svg>
+</div></div>
+</div></div>
+<div class="pickup-count flip2"><div class="o"><div class="t"><div class="parentheses">
+<div class="s">(</div>
+<div class="n min"><div class="min-body">
+<div>01</div>
+<div>02</div>
+<div>03</div>
+<div>04</div>
+<div>05</div>
+</div></div>
+<div class="m">/</div>
+<div class="n max"><div class="max-body">00</div></div>
+<div class="s">)</div>
+</div></div></div></div>
+</div>
+</div>
+</div>
+<div class="spr" data-n="1" data-mob="4.5"></div>
+<section class="section section-what-we-do js-mh" data-bg="dark" data-n="1" data-scroll-section><div class="in">
+<div class="body">
+<div class="spr" data-n="3"></div>
+<div class="section-title">
+<h2 class="h2 section-title-headline flip-y js-inview"><div class="js-split-l"><div class="l">What we do</div></div></h2>
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+</div>
+</div>
+<div class="body thin">
+<div class="spr" data-n="1" data-mob="2"></div>
+<div class="section-lead" data-type="cover"><div data-disable="any" class="p1 js-split-w flip-y js-inview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odit. Aliquid, quam impedit nam architecto ea, optio eum porro recusandae laudantium, quod eligendi soluta! Neque nemo quo fugiat nobis voluptatum!</div>
+<div class="spr" data-n="1" data-mob="2"></div>
+<div class="section-footer ui-btn-circle-wrap js-clip"><a href="about/index.html" class="ui-btn-circle ui-link-underline flip" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="circle"><div class="ui-btn-circle-origin">
+<div class="txt"><div class="o"><div class="t">
+<div class="w">About Us</div>
+<div class="u"></div>
+</div></div></div>
+<div class="f"></div>
+<div class="b"></div>
+</div></a></div>
+<div class="spr" data-n="4"></div>
+</div>
+</div></section><section class="section js-mh" data-n="1"><div class="body">
+<div class="section-title" data-scroll-section>
+<h2 class="h2 section-title-headline flip-y js-inview"><div class="js-split-l">
+<div class="l">Featured project</div>
+<div class="l">And Research</div>
+</div></h2>
+<div class="spr" data-n="1.5" data-mob="0"></div>
+<div class="section-title-support js-clip"><a href="project/index.html" class="ui-link ui-link-underline flip" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="link"><div class="o"><div class="t"> <div class="w">View all project</div> <div class="u"></div>
+</div></div></a></div>
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+</div>
+<div class="features flip">
+<a href="research/imaginary-sweets/index.html" class="features-a js-inview flip-origin" @mouseenter="webGL.features.enter" @mouseleave="webGL.features.leave" data-thumb-id="710" data-c="thumb" data-scroll-section><div class="features-h-wrap js-css"><div class="in"><div class="features-h">
+<div class="features-n js-clip"><div class="o"><div class="t"><div class="parentheses">
+<div class="s">(</div>
+<div class="n">01</div>
+<div class="s">)</div>
+</div></div></div></div>
+<div class="features-t-wrap"><div class="features-t gallery flip-f js-delay-n js-split-l">
+<div class="l">Dark</div>
+<div class="l">Matter</div>
+</div></div>
+</div></div></div>
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+<div class="border features-hover"><div class="b"></div></div></a><a href="project/jal-sky-museum/index.html" class="features-a js-inview flip-origin" @mouseenter="webGL.features.enter" @mouseleave="webGL.features.leave" data-thumb-id="580" data-c="thumb" data-scroll-section><div class="features-h-wrap js-css"><div class="in"><div class="features-h">
+<div class="features-n js-clip"><div class="o"><div class="t"><div class="parentheses">
+<div class="s">(</div>
+<div class="n">02</div>
+<div class="s">)</div>
+</div></div></div></div>
+<div class="features-t-wrap"><div class="features-t gallery flip-f js-delay-n js-split-l">
+<div class="l">Dark</div>
+<div class="l">Matter 02</div>
+</div></div>
+</div></div></div>
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+<div class="border features-hover"><div class="b"></div></div></a><a href="project/onerace/index.html" class="features-a js-inview flip-origin" @mouseenter="webGL.features.enter" @mouseleave="webGL.features.leave" data-thumb-id="192" data-c="thumb" data-scroll-section><div class="features-h-wrap js-css"><div class="in"><div class="features-h">
+<div class="features-n js-clip"><div class="o"><div class="t"><div class="parentheses">
+<div class="s">(</div>
+<div class="n">03</div>
+<div class="s">)</div>
+</div></div></div></div>
+<div class="features-t-wrap"><div class="features-t gallery flip-f js-delay-n js-split-l"><div class="l">Dark Matter 03</div></div></div>
+</div></div></div>
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+<div class="border features-hover"><div class="b"></div></div></a><a href="project/ppp-ci-renewal/index.html" class="features-a js-inview flip-origin" @mouseenter="webGL.features.enter" @mouseleave="webGL.features.leave" data-thumb-id="183" data-c="thumb" data-scroll-section><div class="features-h-wrap js-css"><div class="in"><div class="features-h">
+<div class="features-n js-clip"><div class="o"><div class="t"><div class="parentheses">
+<div class="s">(</div>
+<div class="n">04</div>
+<div class="s">)</div>
+</div></div></div></div>
+<div class="features-t-wrap"><div class="features-t gallery flip-f js-delay-n js-split-l">
+<div class="l">Dark</div>
+<div class="l">Matter 04</div>
+</div></div>
+</div></div></div>
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+<div class="border features-hover"><div class="b"></div></div></a><a href="project/kolor-paris-collection/index.html" class="features-a js-inview flip-origin" @mouseenter="webGL.features.enter" @mouseleave="webGL.features.leave" data-thumb-id="189" data-c="thumb" data-scroll-section><div class="features-h-wrap js-css"><div class="in"><div class="features-h">
+<div class="features-n js-clip"><div class="o"><div class="t"><div class="parentheses">
+<div class="s">(</div>
+<div class="n">05</div>
+<div class="s">)</div>
+</div></div></div></div>
+<div class="features-t-wrap"><div class="features-t gallery flip-f js-delay-n js-split-l">
+<div class="l">Dark</div>
+<div class="l">Matter 05</div>
+</div></div>
+</div></div></div>
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+<div class="border features-hover"><div class="b"></div></div></a>
+</div>
+</div></section><div class="spr" data-n="4"></div>
+<ul class="get-global-navi">
+<li> <a data-to="home" href="index.html" class="js-get-navi-a">Home</a> </li> <li> <a data-to="archive-project" href="project/index.html" class="js-get-navi-a">Project</a> </li> <li> <a data-to="archive-research" href="research/index.html" class="js-get-navi-a">Research</a> </li> <li> <a data-to="about" href="about/index.html" class="js-get-navi-a">About</a> </li> </ul>
+<div class="page-footer section-wrap js-inview" data-type="cover">
+<section class="section section-tagline section-territory" data-bg="dark" data-scroll-section><div class="body"><div class="in">
+<div class="section-title">
+<h2 class="h2 section-title-headline flip-y js-inview"><div class="js-split-l">
+<div class="l">Space</div>
+<div class="l">Invaders</div>
+</div></h2>
+<div class="spr" data-n="1.5" data-tab="0"></div>
+<div class="section-title-support js-clip"><a href="about/index.html" class="ui-link ui-link-underline" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="link"><div class="o"><div class="t"> <div class="w">About us</div> <div class="u"></div>
+</div></div></a></div>
+</div>
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+<div class="mq-wrap"><div class="re-body">
+<div class="spr" data-n="1"></div>
+<div class="mq js-inview"><div class="mq-g mq-anim"><div class="mq-ul js-inview">
+<div class="mq-li">
+<div class="l"><div class="o"><div class="t">Shaibu</div></div></div>
+<div class="l"><div class="o"><div class="t">Jomon</div></div></div>
+<div class="l"><div class="o"><div class="t">Bharath</div></div></div>
+<div class="l"><div class="o"><div class="t">kajal</div></div></div>
+<div class="l"><div class="o"><div class="t">anandhu vp</div></div></div>
+<div class="l"><div class="o"><div class="t">nithin</div></div></div>
+<div class="l"><div class="o"><div class="t"></div>aysheri</div></div>
+</div>
+<div class="l"><div class="o"><div class="t">Shaibu</div></div></div>
+<div class="l"><div class="o"><div class="t">Jomon</div></div></div>
+<div class="l"><div class="o"><div class="t">Bharath</div></div></div>
+<div class="l"><div class="o"><div class="t">kajal</div></div></div>
+<div class="l"><div class="o"><div class="t">anandhu vp</div></div></div>
+<div class="l"><div class="o"><div class="t">nithin</div></div></div>
+<div class="l"><div class="o"><div class="t"></div>aysheri</div></div>
+</div>
+</div></div></div>
+<div class="mq back js-inview"><div class="mq-e mq-anim"><div class="mq-ul js-inview">
+<div class="mq-li">
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+</div>
+<div class="mq-li">
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+<div class="l"><div class="o"><div class="t">next</div></div></div>
+</div>
+</div></div></div>
+<div class="spr" data-n="4.5" data-tab="0" data-mob="0"></div>
+</div></div>
+<div class="spr" data-n="0" data-mob="7"></div>
+</div></div></section><section class="section section-sitemap js-mh" data-n="1" data-bg="dark" data-scroll-section><div class="footer-header"><div class="body"><div class="section-title">
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+<div class="title-flex">
+<div class="title-td title-td-left js-clip"><div class="ui-lang-a" data-to="ja" @click.prevent="__LANG__.onToggle" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="btn"><a href="#" class="ui-btn-link ui-btn-link-re"><div class="o"><div class="t">JA</div></div></a></div></div>
+<div class="title-td title-td-center js-clip js-delay-n"><h2 class="h2 section-title-headline flip-y js-inview"><div class="js-split-l">
+<div class="l">page end</div>
+<div class="l"></div>
+</div></h2></div>
+<div class="title-td title-td-right js-clip"><a href="#" class="ui-btn ui-btn-backto-top" @click="ui.anchorToTop" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="btn"><div class="ui-btn-txt"><div class="o"><div class="t">BACK TO TOP</div></div></div>
+<div class="ui-btn-arrow"> <div class="o"> <div class="i i-arrow-right"></div> <div class="b"></div> </div> </div></a></div>
+</div>
+</div></div></div>
+<div class="footer-flex js-mh" data-n="1"><div class="footer-body"><div class="body">
+<div class="footer-title">
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+<div class="spr" data-n="2.5" data-mob="6"></div>
+<div class="footer-title-body">
+<a href="#" class="footer-title-a js-split-l flip2 flip-c js-delay-n js-inview" @click="ui.onMailTo" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="link"><div class="l">GET IN TOUCH</div></a><div class="footer-title-aside js-clip"><a href="#" class="ui-link-table ui-link-underline contact-aside-a"><div class="th"><div class="o"><div class="t"><div class="w">EMAIL</div></div></div></div>
+<div class="td"><div class="o"><div class="t">
+<div class="w">info</div>
+<div class="u"></div>
+</div></div></div></a></div>
+</div>
+<div class="spr" data-n="2.5" data-mob="6"></div>
+<div class="border js-inview js-css"><div class="in"><div class="b"></div></div></div>
+</div>
+<div class="title-flex">
+<div class="title-td js-clip title-td-left"><small class="address"><div class="o"><div class="t">2021</div></div></small></div>
+<div class="title-td js-clip title-td-center"><ul class="sns-ul">
+<li><a href="#" target="_blank" rel="noopener" class="ui-link ui-link-underline flip" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="link"><div class="o"><div class="t">Instagram<div class="u"></div>
+</div></div></a></li>
+<li><a href="#" target="_blank" rel="noopener" class="ui-link ui-link-underline flip" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="link"><div class="o"><div class="t"><div class="u"></div>
+</div></div></a></li>
+</ul></div>
+<div class="title-td js-clip title-td-right"><a href="#" class="ui-btn-link ui-btn-link-re ui-btn-theme" @click.prevent="__THEME__.onToggle()" @mouseenter="ui.onEnter" @mouseleave="ui.onLeave" data-c="link"><div class="o">
+<div class="t" data-to="dark">DARK MODE</div>
+<div class="t" data-to="light">LIGHT MODE</div>
+</div></a></div>
+</div>
+</div></div></div></section>
+</div>
+</div></div></main><div class="ui-cursor"><div class="ui-cursor-body clip">
+<div class="ui-cursor-text" data-c="drag"><div class="in"><div class="o"><div class="t">Drag</div></div></div></div>
+<div class="ui-cursor-text" data-c="click"><div class="in"><div class="o"><div class="t">Click</div></div></div></div>
+<div class="ui-cursor-text" data-c="explore"><div class="in"><div class="o"><div class="t">Explore</div></div></div></div>
+<div class="ui-cursor-text" data-c="next"><div class="in"><div class="o"><div class="t">Next</div></div></div></div>
+<div class="ui-cursor-text" data-c="copy"><div class="in">
+<div class="o"><div class="t"><div>Copy an email address</div></div></div>
+<div class="o"><div class="t"><div>Copied</div></div></div>
+</div></div>
+<div class="ui-cursor-bg"><div class="b"></div></div>
+</div></div>
+<div class="site-footer"><div class="js-scroll-height"></div></div>
+<div class="site-mask"></div>
+<div class="alert" aria-hidden="true">
+<div class="alert-body alert-brows">We are sorry, your browser version is not supported.</div>
+<div class="alert-body alert-noscript">For full functionality of this site it is necessary to enable JavaScript. Here are the <a href="https://www.enable-javascript.com/" rel="noopener" target="_blank">instructions how to enable JavaScript in your web browser</a>.</div>
+</div>
+<noscript>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../wp-content/themes/the-shift/assets/css/prod-loader2d07.css?616f73173a88e">
+<link rel="stylesheet" href="../wp-content/themes/the-shift/assets/css/prod-noscript625f.css?616f73173a8bc">
+</noscript>
+<script defer src="../wp-content/themes/the-shift/assets/js/prod-loader39cb.js?616f73173a8e2"></script>
+<script defer src="../wp-content/themes/the-shift/assets/js/cdn.min.js"></script>
+
+</body>
+
+
+</html>
